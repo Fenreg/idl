@@ -1,19 +1,25 @@
-pro draw_nasa_letters, png=png
-;d Author: clement<.>feller<@>obspm<.>fr
-;d Changelog: 24-Feb-2018 v1.0 first light
-;d Purpose: Display the letters 'a', 'n', 's' in blue, add a little computer 
+;==============================================================================
+;d NAME: draw_nasa_letters.pro
+;d AUTHOR: Clément Feller (cxlfeller--at--gmx<dot>com)
+;d PURPOSE: Display the letters 'a', 'n', 's' in blue, add a little computer 
 ;d    and eventually save it to file in the present working directory
-;d *REAL* purpose: None whatsover besides using some legacy Hershey vector 
+;d *REAL* PURPOSE: None whatsover besides using some legacy Hershey vector 
 ;d    fonts that are not repertoried by the IDL manual.
+;d CHANGELOG: 2018-02-24 v1.0 first light
+;d            2021-06-01 v1.0.1 new header
+;d I/O:
+;d <- (input)
+;d -> (output)
 ;d
-;d Dependancies: none
-;d
-;d Use: compile and run with or without the png option
-;d
-;d Example: IDL> .run draw_nasa_letters, /png
-;d
-;d NB: The Herschey vector font #19 DOES NOT exist in IDL. 
-;d    Why? TA-DA-DA-DAAAAN! No one knows.
+;d USAGE: compile and run with or without the png option
+;d        IDL> .run draw_nasa_letters, /png
+;d COMMENTS: (give it a blue thumb)
+;d DEPENDANCIES: idl>v7.1 (with modified idlstartup for !true/!false or idl8.0 
+;d NOTES: NB: The Herschey vector font #19 DOES NOT exist in IDL. 
+;d    Why? TA-DA-DA-DAAAAN! No explanations are provided anywhere
+;d COPYRIGHT: CC-BY-NC-ND
+;==============================================================================
+pro draw_nasa_letters, png=png
 
  if keyword_set(png) then flg_png = !true else flg_png = !false
 
