@@ -14,7 +14,7 @@
 ;d USAGE: compile and run with or without the png option
 ;d        IDL> .run draw_nasa_letters, /png
 ;d COMMENTS: (give it a blue thumb)
-;d DEPENDANCIES: idl>v7.1 (with modified idlstartup for !true/!false or idl8.0 
+;d DEPENDANCIES: idl>v7.1 (with modified idlstartup for !true/!false) or idl8.0
 ;d NOTES: NB: The Herschey vector font #19 DOES NOT exist in IDL. 
 ;d    Why? TA-DA-DA-DAAAAN! No explanations are provided anywhere
 ;d COPYRIGHT: CC-BY-NC-ND
